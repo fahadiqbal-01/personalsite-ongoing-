@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <!--- === favIcon link === --->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <!--- === tailwind link === --->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--- === fontawsome link === --->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--- === css file link === --->
+    <link rel="stylesheet" href="index.css" />
+
+    <style>
+      .nav_list {
+        background: #0d0e1b;
+      }
+      .nav_list ul li {
+        padding: 0 5px;
+        position: relative;
+      }
+      .nav_list ul li::after {
+        content: "";
+        height: 10px;
+        width: 0;
+        background: transparent;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+        transition: 0.4s;
+      }
+      .nav_list ul li:hover::after {
+        border: 2px solid #fff;
+        opacity: 0.7;
+        height: 25px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 w-[100%] h-[100vh]">
+    <!--- === navBar start === --->
+    <nav class="w-[100%] absolute mx-auto top-[25px]">
+      <div class="container w-[1500px] mx-auto">
+        <div
+          class="nav_list w-[1000px] mx-[auto] h-[55px] border-0 rounded-[15px] px-[20px]"
+        >
+          <ul class="flex items-center justify-evenly m-0 p-0">
+            <li
+              class="home_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+            >
+              <a class="pointer-events-none">Home</a>
+            </li>
+            <li
+              class="about_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+            >
+              <a class="pointer-events-none">About</a>
+            </li>
+            <li
+              class="resume_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+            >
+              <a class="pointer-events-none">Resume</a>
+            </li>
+            <li
+              class="portfolio_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+            >
+              <a class="pointer-events-none">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--- === navBar end === --->
+
+    <!--- === banner part start === --->
+    <div class="banner pt-[150px]">
+      <div class="container w-[1500px] mx-auto">
+        <div class="banner_main grid grid-cols-3 gap-[30px]">
+          <!-------- profile -------->
+          <div
+            class="profile bg-[#0d0e1b] border-0 rounded-[10px] px-[20px] py-[30px] h-[650px] sticky top-[60px] mt-[50px] "
+          >
+            <img
+              src="./images/IMG_3268.png"
+              alt="profile_image"
+              class="h-[190px] w-[180px] mx-auto mb-[15px] border-0 rounded-[15px]"
+              id="profile_image"
+            />
+            <div class="profile_details">
+              <h2
+                class="text-[25px] font-[700] text-[#fff] opacity-[.5] text-center mb-[5px] pointer-events-none"
+              >
+                Fahad Iqbal
+              </h2>
+              <h3
+                class="text-[25px] font-thin text-[#fff] opacity-[.5] text-center mb-[30px] pointer-events-none"
+              >
+                Front-end Developer
+              </h3>
+              <div
+                class="socials w-[280px] flex items-center justify-center mx-auto gap-[25px] border-[2px] rounded-[10px] border-transparent mb-[50px] relative"
+              >
+                <a
+                  href="https://www.facebook.com/fahadiqbal246?mibextid=JRoKGi"
+                  target="_blank"
+                  class="inline-block text-[35px] text-[#316FF6] hover:scale-[1.3] transition duration-[400] ease-out z-[1000] relative overflow-hidden group hover:overflow-visible"
+                  ><i class="fa-brands fa-square-facebook"></i>
+                  <label
+                    class="absolute bottom-[-20px] left-0 text-[7.3px] text-transparent group-hover:text-[#fff] group-hover:bottom-0 transiton duration-300 ease-in-out"
+                    >facebook</label
+                  ></a
+                >
+
+                <a
+                  href="https://x.com/_fahad_01_?s=21"
+                  target="_blank"
+                  class="inline-block text-[35px] text-[#1DA1F2] hover:scale-[1.3] transition duration-[400] ease-out z-[1000] relative overflow-hidden group hover:overflow-visible"
+                  ><i class="fa-brands fa-square-twitter"></i>
+                  <label
+                    class="absolute bottom-[-20px] left-[4px] text-[7.3px] text-transparent group-hover:text-[#fff] group-hover:bottom-0 transiton duration-300 ease-in-out"
+                    >Twitter</label
+                  ></a
+                >
+                <a
+                  href="https://www.linkedin.com/in/fahad-iqbal-37b3b52b7/"
+                  target="_blank"
+                  class="inline-block text-[35px] text-[#0a63bc] hover:scale-[1.3] transition duration-[400] ease-out z-[1000] relative overflow-hidden group hover:overflow-visible"
+                  ><i class="fa-brands fa-linkedin"></i>
+                  <label
+                    class="absolute bottom-[-20px] left-0 text-[7.3px] text-transparent group-hover:text-[#fff] group-hover:bottom-0 transiton duration-300 ease-in-out"
+                    >LinkedIN</label
+                  ></a
+                >
+                <a
+                  href="https://www.fiverr.com/fahad_iqbal_01?up_rollout=true"
+                  target="_blank"
+                  class="inline_block ml-[-5px] hover:scale-[1.3] transition duration-[400] ease-out z-[1000] relative overflow-hidden group hover:overflow-visible"
+                  ><img
+                    src="./images/92360592-5a3bb800-f0ed-11ea-8dce-dd95b72c7825.png"
+                    alt="fivver_icon"
+                    class="h-[35px] w-[42px] ml-0"
+                  />
+                  <label
+                    class="absolute bottom-[-20px] left-[10px] text-[7.3px] text-transparent group-hover:text-[#fff] group-hover:bottom-[-8.5px] transiton duration-300 ease-in-out"
+                    >Fivver</label
+                  ></a
+                >
+              </div>
+              <div class="profile_bio px-[15px]">
+                <ul>
+                  <li
+                    class="text-[20px] pointer-events-none mb-[15px] text-[#657187]"
+                  >
+                    <i class="fa-solid fa-envelope"></i
+                    ><span
+                      class="ml-[10px] text-[16px] font-[400] text-[#fff] opacity-[.7]"
+                      >fahad.iqbal.im.47@gmail.com</span
+                    >
+                  </li>
+
+                  <li
+                    class="text-[20px] pointer-events-none mb-[15px] text-[#657187]"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span
+                      class="ml-[10px] text-[16px] font-[400] text-[#fff] opacity-[.7]"
+                      >South Alekanda, Barishal Shadar, Barsiahl,
+                      Bangladesh</span
+                    >
+                  </li>
+
+                  <li
+                    class="text-[20px] pointer-events-none mb-[15px] text-[#657187]"
+                  >
+                    <i class="fa-solid fa-phone"></i
+                    ><span
+                      class="ml-[10px] text-[16px] font-[400] text-[#fff] opacity-[.7]"
+                      >01748996699</span
+                    >
+                  </li>
+
+                  <li
+                    class="text-[20px] pointer-events-none mb-[15px] text-[#657187]"
+                  >
+                    <i class="fa-solid fa-globe"></i
+                    ><span
+                      class="ml-[10px] text-[16px] font-[400] text-[#fff] opacity-[.7]"
+                      >04.04.2024</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-------- profile -------->
+
+          <!-------- all details -------->
+          <div
+            class="all_details col-span-2 border-0 rounded-[10px] bg-[#0d0e1b] px-[30px] py-[30px]"
+          >
+            <div
+              class="home px-[20px] py-[20px] border-0 rounded-[10px] mt-[200px] h-[550px]"
+            >
+              <div
+                class="home_texts flex items-center justify-center gap-[50px]"
+              >
+                <div class="left">
+                  <h1
+                    class="text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none"
+                  >
+                    Front end developer <br />
+                    who writes clean, <br />
+                    elegant and <br />
+                    efficient code
+                  </h1>
+                </div>
+                <div class="right text-center">
+                  <h1
+                    class="text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none"
+                  >
+                    &lt; coder &gt;
+                  </h1>
+                  <p
+                    class="text-[16px] font-[500] text-[#fff] opacity-[.6] pointer-events-none"
+                  >
+                    responsive web designer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="about hidden">
+              <h1
+                class="text-[#fff] opacity-[.6] text-[40px] font-[600] mb-[50px]"
+              >
+                <span class="tracking-[4px]">ABOUT</span>____
+              </h1>
+              <p
+                class="text-[22px] text-[#fff] opacity-[.6] font-[400] mb-[10px]"
+              >
+                Hey! My name is Fahad. I am a front-end developer based in
+                Bangladesh.
+              </p>
+              <p
+                class="w-[720px] text-[16px] text-[#fff] opacity-[.5] font-thin mb-[20px]"
+              >
+                I've always been someone Who has both a creative and a logical
+                side when 1 discover ad web dasign in college. I realized it
+                would be the perfect fit. I could use any creative side to
+                design and any logical side to code As a developer allows me to
+                make sure no detail is lost in translation. Still learning and
+                exploring new things to perfect my craft.
+              </p>
+              <h3
+                class="text-[22px] text-[#fff] font-[500] opacity-[.6] mt-[15px]"
+              >
+                What I Do!
+              </h3>
+
+              <div class="about_details mt-[25px] pb-[30px]">
+                <div
+                  class="top flex justify-center items-center gap-[50px] mb-[35px]"
+                >
+                  <div
+                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#f76300] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                  >
+                    <h2
+                      class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
+                    >
+                      <i class="fa-solid fa-code"></i> Web Development
+                    </h2>
+                    <p
+                      class="text-[16px] font-[400] text-white opacity-[.9] pointer-events-none"
+                    >
+                      Proven work experience as a Front-end developer. Use
+                      markup languages like HTML to create user-friendly web
+                      pages. Maintain and improve website. Stay up-to-date on
+                      emerging technologies. Understanding of layout aesthetics.
+                    </p>
+                  </div>
+                  <div
+                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#086af4] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                  >
+                    <h2
+                      class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
+                    >
+                      <i class="fa-solid fa-laptop-code"></i> Responsive Web
+                      Design
+                    </h2>
+                    <p
+                      class="text-[16px] font-[400] text-white opacity-[.9] pointer-events-none"
+                    >
+                      Hands on experience with markup languages. In-depth
+                      understanding of the entire web development process
+                      (design, development and deployment). Well maintained
+                      responsive websites.
+                    </p>
+                  </div>
+                </div>
+                <div class="bottom flex justify-center items-center gap-[50px]">
+                  <div
+                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#657187] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                  >
+                    <h2
+                      class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
+                    >
+                      <i class="fa-solid fa-book-bookmark"></i> Frameworks and
+                      Libraries
+                    </h2>
+                    <p
+                      class="text-[16px] font-[400] text-white opacity-[.9] pointer-events-none"
+                    >
+                      work with front end frameworks and libraries like
+                      <span class="font-[600]"
+                        >React, Bootstrap and tailwind</span
+                      >
+                      to streamline development and enhance user interactivity.
+                    </p>
+                  </div>
+                  <div
+                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#f7e025] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                  >
+                    <h2
+                      class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
+                    >
+                      <i class="fa-solid fa-photo-film"></i> Video Editing
+                      <span class="tracking-[0]">(one of the hobbies)</span>
+                    </h2>
+                    <p
+                      class="text-[16px] font-[400] text-white pointer-events-none"
+                    >
+                      I mostly use Adobe Rush, Adobe Premier Pro and CatCut to
+                      make montage videos. Most of the videos I have made is
+                      based on Movies or Anime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="resume hidden">
+              <h1
+                class="text-[#fff] opacity-[.6] text-[40px] font-[600] mb-[50px]"
+              >
+                <span>Resume</span> ____
+              </h1>
+              <div class="resume_details flex gap-[20px]">
+                <div class="left w-[45%]">
+                  <h3
+                    class="text-[#fff] opacity-[.8] text-[25px] font-[400] mb-[50px] pointer-events-none"
+                  >
+                    <i class="fa-solid fa-school"></i> Education
+                  </h3>
+                  <div class="left_details">
+                    <div
+                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] w-[80%] mb-[20px] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out"
+                    >
+                      <h2
+                        class="text-[20px] font-[500] opacity-[.7] text-[#fff] mb-[10px] pointer-events-none group-hover:text-[#fff] group-hover:opacity-[.6] transition duration-300 ease-out"
+                      >
+                        Creative IT Institute
+                      </h2>
+                      <h3
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Location : Dhaka, Bangladesh
+                      </h3>
+                      <h4
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Field of study : Front-end Development
+                      </h4>
+                      <h5
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Status : on-going
+                      </h5>
+                    </div>
+                    <div
+                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] w-[80%] mb-[20px] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out"
+                    >
+                      <h2
+                        class="text-[20px] font-[500] opacity-[.7] text-[#fff] mb-[10px] pointer-events-none group-hover:text-[#fff] group-hover:opacity-[.6] transition duration-300 ease-out"
+                      >
+                        Barisal Polytechnic Institute
+                      </h2>
+                      <h3
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Location : Barishal Sharad, Barishal, Bangladesh
+                      </h3>
+                      <h4
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Field of study : Computer Science
+                      </h4>
+                      <h5
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Status : on-going
+                      </h5>
+                    </div>
+                    <div
+                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] w-[80%] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out"
+                    >
+                      <h2
+                        class="text-[20px] font-[500] opacity-[.7] text-[#fff] mb-[10px] pointer-events-none group-hover:text-[#fff] group-hover:opacity-[.6] transition duration-300 ease-out"
+                      >
+                        Udayan High School, Barishal
+                      </h2>
+                      <h3
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Location : Barishal Sharad, Barishal, Bangladesh
+                      </h3>
+                      <h4
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Certification : SSC
+                      </h4>
+                      <h5
+                        class="text-[16px] font-[400] text-[#fff] mb-[3px] pointer-events-none group-hover:text-[#fff] transition duration-300 ease-out"
+                      >
+                        Grade : 4.89
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="right w-[45%]">
+                  <h2
+                    class="text-[#fff] opacity-[.8] text-[25px] font-[400] mb-[50px] pointer-events-none"
+                  >
+                    <i class="fa-solid fa-list-check"></i> Skills
+                  </h2>
+                  <div class="right_details">
+                    <div
+                      class="HTML flex justify-between items-center bg-[#f76300] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                    >
+                      <h3 class="text-black font-[500] pointer-events-none">
+                        HTML
+                      </h3>
+                      <div
+                        class="skill_rate h-[5px] w-[80%] bg-[#fff] border-0 rounded-[5px] after:content-[''] after:h-[5px] after:w-[100%] after:bg-black after:border-0 after:rounded-[5px] after:absolute after:left-0 relative"
+                      ></div>
+                    </div>
+                    <div
+                      class="CSS flex justify-between items-center bg-[#086af4] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                    >
+                      <h3 class="text-black font-[500] pointer-events-none">
+                        CSS
+                      </h3>
+                      <div
+                        class="skill_rate h-[5px] w-[80%] bg-[#fff] opacity-[.6] border-0 rounded-[5px] after:content-[''] after:h-[5px] after:w-[80%] after:bg-black after:border-0 after:rounded-[5px] after:absolute after:left-0 relative"
+                      ></div>
+                    </div>
+                    <div
+                      class="Bootstrap flex justify-between items-center bg-[#7c18f8] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                    >
+                      <h3 class="text-black font-[500] pointer-events-none">
+                        Bootstrap
+                      </h3>
+                      <div
+                        class="skill_rate h-[5px] w-[80%] bg-[#fff] opacity-[.6] border-0 rounded-[5px] after:content-[''] after:h-[5px] after:w-[60%] after:bg-black after:border-0 after:rounded-[5px] after:absolute after:left-0 relative"
+                      ></div>
+                    </div>
+                    <div
+                      class="Tailwind flex justify-between items-center bg-[#1cc5bb] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                    >
+                      <h3 class="text-black font-[500] pointer-events-none">
+                        Tailwind
+                      </h3>
+                      <div
+                        class="skill_rate h-[5px] w-[80%] bg-[#fff] opacity-[.6] border-0 rounded-[5px] after:content-[''] after:h-[5px] after:w-[80%] after:bg-black after:border-0 after:rounded-[5px] after:absolute after:left-0 relative"
+                      ></div>
+                    </div>
+                    <div
+                      class="JS flex justify-between items-center bg-[#f7e025] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                    >
+                      <h3 class="text-black font-[500] pointer-events-none">
+                        JS
+                      </h3>
+                      <div
+                        class="skill_rate h-[5px] w-[80%] bg-[#fff] opacity-[.6] border-0 rounded-[5px] after:content-[''] after:h-[5px] after:w-[40%] after:bg-black after:border-0 after:rounded-[5px] after:absolute after:left-0 relative"
+                      ></div>
+                    </div>
+                    <div
+                      class="React flex justify-between items-center bg-[#52c1de] px-[15px] py-[10px] border-0 rounded-[10px] mb-[35px]"
+                    >
+                      <h3 class="text-black font-[500] pointer-events-none">
+                        React
+                      </h3>
+                      <div
+                        class="skill_rate h-[5px] w-[80%] bg-[#fff] opacity-[.6] border-0 rounded-[5px] after:content-[''] after:h-[5px] after:w-[50%] after:bg-black after:border-0 after:rounded-[5px] after:absolute after:left-0 relative"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio hidden">
+              <h1
+                class="text-[#fff] opacity-[.6] text-[40px] font-[600] mb-[50px]"
+              >
+                Portfolio ____
+              </h1>
+              <h3
+                class="text-[#fff] opacity-[.7] font-[400] text-[17px] bg-[#768bbd] px-[5px] py-[5px] border-[2px] rounded-[5px] border-transparent mb-[40px] text-center hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out"
+              >
+                <span class="pointer-events-none">My Works</span>
+              </h3>
+              <div class="portfolio_detaiils py-[35px] px-[25px]">
+                <div class="first_row flex items-center justify-between">
+                  <div class="left">
+                    <a
+                      href="https://fahadiqbal-01.github.io/hanock/"
+                      target="_blank"
+                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative mb-[40px]"
+                    >
+                      <img
+                        src="./images/hancok.png"
+                        alt="hancok_img"
+                        class="h-[200px] w-[400px] border-0 rounded-[10px] group-hover:scale-[1.2] transition duration-300 ease-out"
+                      />
+                      <label
+                        class="absolute left-2 bottom-[-40px] text-[#fff] font-500 opacity-[.6] group-hover:bottom-2"
+                        >Click to open</label
+                      >
+                    </a>
+                    <br />
+                    <a
+                      href="https://fahadiqbal-01.github.io/0mah/"
+                      target="_blank"
+                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative"
+                    >
+                      <img
+                        src="./images/omah.png"
+                        alt="0mah_img"
+                        class="h-[200px] w-[400px] border-0 rounded-[5px] group-hover:scale-[1.2] transition duration-300 ease-out"
+                      />
+                      <label
+                        class="absolute left-2 bottom-[-40px] text-[#000000] font-500 opacity-[.6] group-hover:bottom-2"
+                        >Click to open</label
+                      >
+                    </a>
+                  </div>
+                  <div class="right">
+                    <a
+                      href="https://fahadiqbal-01.github.io/logoipsum/"
+                      target="_blank"
+                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative mb-[40px]"
+                    >
+                      <img
+                        src="./images/loopism.png"
+                        alt="loopish_img"
+                        class="h-[200px] w-[400px] border-0 rounded-[5px] group-hover:scale-[1.2] transition duration-300 ease-out"
+                      />
+                      <label
+                        class="absolute left-2 bottom-[-40px] font-[500] text-[#000000] opacity-[.6] group-hover:bottom-0"
+                        >Click to open</label
+                      >
+                    </a>
+                    <br />
+                    <a
+                      href="https://fahadiqbal-01.github.io/Multiplication-Tables/"
+                      target="_blank"
+                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative"
+                    >
+                      <img
+                        src="./images/Multiplication-Tables.gif"
+                        alt="multiflication_table_img"
+                        class="h-[200px] w-[400px] border-0 rounded-[5px] scale-[1.2] group-hover:scale-[1.5] transition duration-300 ease-out"
+                      />
+                      <label
+                        class="absolute left-2 bottom-[-40px] font-[500] text-[#000000 font-[500] opacity-[.6] group-hover:bottom-2"
+                        >Click to open</label
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-------- all details -------->
+          <div class="div"></div>
+        </div>
+      </div>
+    </div>
+    <!--- === banner part end === --->
+
+    <script src="script.js"></script>
+  </body>
+</html>
