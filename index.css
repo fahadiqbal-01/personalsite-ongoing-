@@ -12,7 +12,7 @@ body {
     rgba(29, 54, 115, 1) 87%,
     rgba(22, 48, 113, 1) 97%
   );
-  background-size: contain;
+  background-size: cover;
 }
 
 /*--- === navBar css start === ---*/
