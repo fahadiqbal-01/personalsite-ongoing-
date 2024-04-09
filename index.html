@@ -26,9 +26,6 @@
     <link rel="stylesheet" href="index.css" />
 
     <style>
-      .nav_list {
-        background: #0d0e1b;
-      }
       .nav_list ul li {
         padding: 0 5px;
         position: relative;
@@ -59,7 +56,7 @@
     <nav class="w-[100%] absolute mx-auto top-[25px]">
       <div class="container w-[1500px] mx-auto">
         <div
-          class="nav_list w-[1000px] mx-[auto] h-[55px] border-0 rounded-[15px] px-[20px]"
+          class="nav_list 2xl:w-[1000px] bg-[#0d0e1b] mx-[auto] h-[55px] border-0 rounded-[15px] px-[20px]xl:w-[1300px] sm:w-[500px] sm:h-[65px] sm:pt-[3px] s"
         >
           <ul class="flex items-center justify-evenly m-0 p-0">
             <li
@@ -89,12 +86,14 @@
     <!--- === navBar end === --->
 
     <!--- === banner part start === --->
-    <div class="banner pt-[150px]">
+    <div class="banner xl:pt-[150px] sm:pt[100px]">
       <div class="container w-[1500px] mx-auto">
-        <div class="banner_main grid grid-cols-3 gap-[30px]">
+        <div
+          class="banner_main grid xl:grid-cols-3 xl:gap-[30px] sm:grid-cols-1"
+        >
           <!-------- profile -------->
           <div
-            class="profile bg-[#0d0e1b] border-0 rounded-[10px] px-[20px] py-[30px] h-[650px] sticky top-[60px] mt-[50px]"
+            class="profile bg-[#0d0e1b] border-0 rounded-[10px] px-[20px] py-[30px] h-[650px] xl:sticky xl:top-[60px] xl:mt-[50px] sm:static sm:mt-[150px] sm:mb-[100px] sm:mx-auto"
           >
             <img
               src="./images/IMG_3268-min (1).png"
@@ -212,17 +211,17 @@
 
           <!-------- all details -------->
           <div
-            class="all_details col-span-2 border-0 rounded-[10px] bg-[#0d0e1b] px-[30px] py-[30px]"
+            class="all_details col-span-2 border-0 rounded-[10px] bg-[#0d0e1b] xl:px-[30px] xl:py-[30px] sm:mx-[20px] sm:mb-[40px] sm:px-[35px] sm:py-[35px]"
           >
             <div
-              class="home px-[20px] py-[20px] border-0 rounded-[10px] mt-[200px] h-[550px]"
+              class="home xl:px-[20px] xl:py-[20px] border-0 rounded-[10px] xl:mt-[200px] xl:h-[550px] sm:py-[30px]"
             >
               <div
-                class="home_texts flex items-center justify-center gap-[50px]"
+                class="home_texts 2xl:flex 2xl:items-center xl:justify-center xl:gap-[50px] sm:text-center"
               >
                 <div class="left">
                   <h1
-                    class="text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none"
+                    class="text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none sm:mb-[50px] sm:tracking-[2px]"
                   >
                     Front end developer <br />
                     who writes clean, <br />
@@ -246,18 +245,18 @@
             </div>
             <div class="about hidden">
               <h1
-                class="text-[#fff] opacity-[.6] text-[40px] font-[600] mb-[50px]"
+                class="text-[#fff] opacity-[.6] xl:text-[40px] font-[600] xl:mb-[50px] sm:text-[30px] sm:mb-[15px]"
               >
                 <span class="tracking-[4px]">ABOUT</span>____
               </h1>
               <p
-                class="text-[22px] text-[#fff] opacity-[.6] font-[400] mb-[10px]"
+                class="xl:text-[22px] text-[#fff] opacity-[.6] font-[400] mb-[10px] sm:text-[18px]"
               >
                 Hey! My name is Fahad. I am a front-end developer based in
                 Bangladesh.
               </p>
               <p
-                class="w-[720px] text-[16px] text-[#fff] opacity-[.5] font-thin mb-[20px]"
+                class="xl:w-[720px] xl:text-[16px] text-[#fff] opacity-[.5] font-thin mb-[20px] sm:w-full"
               >
                 I've always been someone Who has both a creative and a logical
                 side when 1 discover ad web dasign in college. I realized it
@@ -267,17 +266,18 @@
                 exploring new things to perfect my craft.
               </p>
               <h3
-                class="text-[22px] text-[#fff] font-[500] opacity-[.6] mt-[15px]"
+                class="xl:text-[22px] text-[#fff] font-[500] opacity-[.6] mt-[15px] sm:text-[18px]"
               >
                 What I Do!
               </h3>
 
               <div class="about_details mt-[25px] pb-[30px]">
                 <div
-                  class="top flex justify-center items-center gap-[50px] mb-[35px]"
+                  class="top xl:flex xl:justify-center xl:items-center xl:gap-[50px] xl:mb-[35px] sm:mb-[25px]"
                 >
                   <div
-                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#f76300] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                    class="about_box xl:w-[45%] xl:h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#f76300]
+                     px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group sm:w-[100%] sm:h-[170px]"
                   >
                     <h2
                       class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
@@ -294,7 +294,8 @@
                     </p>
                   </div>
                   <div
-                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#086af4] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                    class="about_box xl:w-[45%] xl:h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#086af4]
+                     px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group sm:w-[100%] sm:h-[170px] xl:mt-[0] sm:mt-[20px]"
                   >
                     <h2
                       class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
@@ -312,9 +313,10 @@
                     </p>
                   </div>
                 </div>
-                <div class="bottom flex justify-center items-center gap-[50px]">
+                <div class="bottom xl:flex xl:justify-center xl:items-center xl:gap-[50px]">
                   <div
-                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#657187] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                    class="about_box xl:w-[45%] xl:h-[200px] border-[1px] border-[transparent] rounded-[10px] xl:mb-0 bg-[#657187] px-[15px]
+                     py-[15px] hover:bg-transparent transition duration-300 ease-out group sm:w-[100%] sm:h-[170px] sm:mb-[20px]"
                   >
                     <h2
                       class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
@@ -333,10 +335,11 @@
                     </p>
                   </div>
                   <div
-                    class="about_box w-[45%] h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#f7e025] px-[15px] py-[15px] hover:bg-transparent transition duration-300 ease-out group"
+                    class="about_box xl:w-[45%] xl:h-[200px] border-[1px] border-[transparent] rounded-[10px] bg-[#f7e025] px-[15px] py-[15px]
+                     hover:bg-transparent transition duration-300 ease-out group sm:w-[100%] sm:h-[170px] "
                   >
                     <h2
-                      class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none"
+                      class="text-[18px] font-[600] text-[#0d0e1b] tracking-[3px] mb-[16px] group-hover:text-[#fff] pointer-events-none "
                     >
                       <i class="fa-solid fa-photo-film"></i> Video Editing
                       <span class="tracking-[0]">(one of the hobbies)</span>
@@ -354,20 +357,20 @@
             </div>
             <div class="resume hidden">
               <h1
-                class="text-[#fff] opacity-[.6] text-[40px] font-[600] mb-[50px]"
+                class="text-[#fff] opacity-[.6] xl:text-[40px] font-[600] mb-[50px] sm:text-[30px]"
               >
                 <span>Resume</span> ____
               </h1>
-              <div class="resume_details flex gap-[20px]">
-                <div class="left w-[45%]">
+              <div class="resume_details xl:flex xl:gap-[20px]">
+                <div class="left xl:w-[45%] sm:w-[100%] sm:mb-[40px]">
                   <h3
-                    class="text-[#fff] opacity-[.8] text-[25px] font-[400] mb-[50px] pointer-events-none"
+                    class="text-[#fff] opacity-[.8] xl:text-[25px] font-[400] mb-[50px] pointer-events-none sm:text-[20px]"
                   >
                     <i class="fa-solid fa-school"></i> Education
                   </h3>
                   <div class="left_details">
                     <div
-                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] w-[80%] mb-[20px] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out"
+                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] xl:w-[80%] mb-[20px] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out sm:w-[100%]"
                     >
                       <h2
                         class="text-[20px] font-[500] opacity-[.7] text-[#fff] mb-[10px] pointer-events-none group-hover:text-[#fff] group-hover:opacity-[.6] transition duration-300 ease-out"
@@ -391,7 +394,7 @@
                       </h5>
                     </div>
                     <div
-                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] w-[80%] mb-[20px] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out"
+                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] xl:w-[80%] mb-[20px] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out sm:w-[100%]"
                     >
                       <h2
                         class="text-[20px] font-[500] opacity-[.7] text-[#fff] mb-[10px] pointer-events-none group-hover:text-[#fff] group-hover:opacity-[.6] transition duration-300 ease-out"
@@ -415,7 +418,7 @@
                       </h5>
                     </div>
                     <div
-                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] w-[80%] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out"
+                      class="education_box bg-[#768bbd] px-[20px] py-[20px] border-[2px] border-transparent rounded-[15px] xl:w-[80%] group hover:bg-transparent hover:border-[#768bbd] transition duration-300 ease-out sm:w-[100%]"
                     >
                       <h2
                         class="text-[20px] font-[500] opacity-[.7] text-[#fff] mb-[10px] pointer-events-none group-hover:text-[#fff] group-hover:opacity-[.6] transition duration-300 ease-out"
@@ -440,15 +443,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="right w-[45%]">
+                <div class="right xl:w-[50%] sm:w-[100%]w-[45%]">
                   <h2
-                    class="text-[#fff] opacity-[.8] text-[25px] font-[400] mb-[50px] pointer-events-none"
+                    class="text-[#fff] opacity-[.8] xl:text-[25px] font-[400] xl:mb-[50px] pointer-events-none sm:text-[20px] sm:mb-[25px]"
                   >
                     <i class="fa-solid fa-list-check"></i> Skills
                   </h2>
                   <div class="right_details">
                     <div
-                      class="HTML flex justify-between items-center bg-[#f76300] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                      class="HTML flex justify-between items-center bg-[#f76300] px-[15px] py-[10px] border-0 rounded-[10px] xl:mb-[61px] sm:w-[100%] sm:mb-[30px]"
                     >
                       <h3 class="text-black font-[500] pointer-events-none">
                         HTML
@@ -458,7 +461,7 @@
                       ></div>
                     </div>
                     <div
-                      class="CSS flex justify-between items-center bg-[#086af4] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                      class="CSS flex justify-between items-center bg-[#086af4] px-[15px] py-[10px] border-0 rounded-[10px] xl:mb-[61px] sm:w-[100%] sm:mb-[30px]"
                     >
                       <h3 class="text-black font-[500] pointer-events-none">
                         CSS
@@ -468,7 +471,7 @@
                       ></div>
                     </div>
                     <div
-                      class="Bootstrap flex justify-between items-center bg-[#7c18f8] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                      class="Bootstrap flex justify-between items-center bg-[#7c18f8] px-[15px] py-[10px] border-0 rounded-[10px] xl:mb-[61px] sm:w-[100%] sm:mb-[30px]"
                     >
                       <h3 class="text-black font-[500] pointer-events-none">
                         Bootstrap
@@ -478,7 +481,7 @@
                       ></div>
                     </div>
                     <div
-                      class="Tailwind flex justify-between items-center bg-[#1cc5bb] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                      class="Tailwind flex justify-between items-center bg-[#1cc5bb] px-[15px] py-[10px] border-0 rounded-[10px] xl:mb-[61px] sm:w-[100%] sm:mb-[30px]"
                     >
                       <h3 class="text-black font-[500] pointer-events-none">
                         Tailwind
@@ -488,7 +491,7 @@
                       ></div>
                     </div>
                     <div
-                      class="JS flex justify-between items-center bg-[#f7e025] px-[15px] py-[10px] border-0 rounded-[10px] mb-[61px]"
+                      class="JS flex justify-between items-center bg-[#f7e025] px-[15px] py-[10px] border-0 rounded-[10px] xl:mb-[61px] sm:w-[100%] sm:mb-[30px]"
                     >
                       <h3 class="text-black font-[500] pointer-events-none">
                         JS
@@ -513,7 +516,7 @@
             </div>
             <div class="portfolio hidden">
               <h1
-                class="text-[#fff] opacity-[.6] text-[40px] font-[600] mb-[50px]"
+                class="text-[#fff] opacity-[.6] xl:text-[40px] font-[600] mb-[50px] sm:text-[25px]"
               >
                 Portfolio ____
               </h1>
@@ -524,13 +527,13 @@
               </h3>
               <div class="portfolio_detaiils py-[35px] px-[25px]">
                 <div
-                  class="first_row flex items-center justify-between mb-[70px]"
+                  class="first_row xl:flex xl:items-center xl:justify-between xl:mb-[70px] sm:text-center sm:mb-[50px]"
                 >
-                  <div class="left">
+                  <div class="left xl:mb-0 sm:mb-[20px]">
                     <a
                       href="https://fahadiqbal-01.github.io/hanock/"
                       target="_blank"
-                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative mb-[40px]"
+                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative xl:mb-[40px] sm:mb-[20px]"
                     >
                       <img
                         src="./images/hancok.png"
@@ -563,7 +566,7 @@
                     <a
                       href="https://fahadiqbal-01.github.io/logoipsum/"
                       target="_blank"
-                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative mb-[40px]"
+                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative xl:mb-[40px] sm:mb-[20px]"
                     >
                       <img
                         src="./images/loopism.png"
@@ -594,18 +597,18 @@
                   </div>
                 </div>
                 <h3
-                  class="text-[#fff] opacity-[.7] font-[400] text-[17px] bg-[#768bbd] px-[5px] py-[5px] border-[2px] rounded-[5px] border-transparent mb-[40px] text-center"
+                  class="text-[#fff] opacity-[.7] font-[400] text-[17px] bg-[#768bbd] px-[5px] py-[5px] border-[2px] rounded-[5px] border-transparent xl:mb-[40px] text-center sm:mb-[40px]"
                 >
                   With React
                 </h3>
                 <div
-                  class="second_row first_row flex items-center justify-between"
+                  class="second_row xl:flex xl:items-center xl:justify-between sm:text-center"
                 >
-                  <div class="left">
+                  <div class="left sm:mx-auto">
                     <a
                       href="https://super-khapse-22fb1c.netlify.app/"
                       target="_blank"
-                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative mb-[40px]"
+                      class="border-[5px] rounded-[10px] border-[#657187] inline-block group hover:border-transparent transition duration-300 ease-out overflow-hidden relative xl:mb-[40px] sm:mb-[20px]"
                     >
                       <img
                         src="./images/aeropage.png"
