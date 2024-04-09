@@ -11,6 +11,7 @@ let p_content = document.querySelector(".portfolio");
 let profile_img = document.querySelector("#profile_image");
 let profile = document.querySelector(".profile");
 
+
 hbtn.addEventListener("click", () => {
   h_content.style.display = "block";
   a_content.style.display = "none";
@@ -26,7 +27,7 @@ abtn.addEventListener("click", () => {
   r_content.style.display = "none";
   p_content.style.display = "none";
   profile_img.style.display = "none";
-  profile.style.height = "450px";
+  profile.style.height = "440px";
 });
 
 rbtn.addEventListener("click", () => {
@@ -35,7 +36,7 @@ rbtn.addEventListener("click", () => {
   a_content.style.display = "none";
   p_content.style.display = "none";
   profile_img.style.display = "none";
-  profile.style.height = "450px";
+  profile.style.height = "440px";
 });
 
 pbtn.addEventListener("click", () => {
@@ -44,5 +45,5 @@ pbtn.addEventListener("click", () => {
   a_content.style.display = "none";
   r_content.style.display = "none";
   profile_img.style.display = "none";
-  profile.style.height = "450px";
+  profile.style.height = "440px";
 });
