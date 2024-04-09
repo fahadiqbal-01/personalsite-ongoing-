@@ -35,7 +35,6 @@
 
     <!--- === css file link === --->
     <link rel="stylesheet" href="index.css" />
-
     <style>
       .nav_list ul li {
         padding: 0 5px;
@@ -52,7 +51,7 @@
         left: 0;
         bottom: 0;
         pointer-events: none;
-        transition: 0.4s;
+        transition: 0.4s ease-out;
       }
       .nav_list ul li:hover::after {
         border: 2px solid #fff;
@@ -60,33 +59,41 @@
         height: 25px;
         width: 100%;
       }
+
+      @media (min-width: 320px) and (max-width: 640px) {
+        .nav_list ul li:hover::after {
+          height: 20px;
+        }
+      }
     </style>
   </head>
   <body class="m-0 p-0 w-[100%]">
     <!--- === navBar start === --->
-    <nav class="w-[100%] absolute mx-auto top-[25px]">
+    <nav class="w-[100%] xlabsolute mx-auto top-[25px] xs:static xs:mt-[25px]">
       <div class="container w-[1500px] mx-auto">
         <div
-          class="nav_list 2xl:w-[1000px] bg-[#0d0e1b] mx-[auto] h-[55px] border-0 rounded-[15px] px-[20px]xl:w-[1300px] sm:w-[500px] sm:h-[65px] sm:pt-[3px] s"
+          class="nav_list xl:w-[1000px] bg-[#0d0e1b] mx-[auto] h-[55px] xl:block xl:opacity-1 border-0 rounded-[15px] px-[20px] xl:w-[1300px] sm:w-[500px] sm:h-[65px] sm:pt-[3px] xs:w-[90%] xs:mx-auto"
         >
-          <ul class="flex items-center justify-evenly m-0 p-0">
+          <ul
+            class="flex items-center xl:justify-evenly m-0 p-0 xs:justify-between"
+          >
             <li
-              class="home_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+              class="home_btn mt-[15px] xl:text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500 xs:text-[14px]"
             >
               <a class="pointer-events-none">Home</a>
             </li>
             <li
-              class="about_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+              class="about_btn mt-[15px] xl:text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500 xs:text-[14px] xs:after:h-[1px]"
             >
               <a class="pointer-events-none">About</a>
             </li>
             <li
-              class="resume_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+              class="resume_btn mt-[15px] xl:text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500 xs:text-[14px]"
             >
               <a class="pointer-events-none">Resume</a>
             </li>
             <li
-              class="portfolio_btn mt-[15px] text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500"
+              class="portfolio_btn mt-[15px] xl:text-[18px] text-[#fff] opacity-[.5] font-[500] hover:text-[#fff] hover:opacity-[.7] transition duration-500 xs:text-[14px]"
             >
               <a class="pointer-events-none">Portfolio</a>
             </li>
@@ -104,8 +111,7 @@
         >
           <!-------- profile -------->
           <div
-            class="profile bg-[#0d0e1b] border-0 rounded-[10px] xl:h-[650px] px-[20px] xl:py-[15px] xl:sticky xl:top-[60px]
-             xl:mt-[50px] sm:static sm:mt-[150px] sm:mb-[100px] sm:mx-[10px] xs:mt-[150px] xs:mb-[30px] xs:py-0 xs:h-[530px]"
+            class="profile bg-[#0d0e1b] border-0 rounded-[10px] xl:h-[650px] px-[20px] xl:py-[15px] xl:sticky xl:top-[60px] xl:mt-[50px] sm:static sm:mt-[150px] sm:mb-[100px] sm:mx-[10px] xs:mt-[150px] xs:mb-[30px] xs:py-[15px] xs:h-[530px] xs:mt-[20px]"
           >
             <img
               src="./images/IMG_3268-min (1).png"
@@ -113,7 +119,7 @@
               class="h-[190px] w-[180px] mx-auto mb-[15px] border-0 rounded-[15px]"
               id="profile_image"
             />
-            <div class="profile_details ">
+            <div class="profile_details">
               <h2
                 class="text-[25px] font-[700] text-[#fff] opacity-[.5] text-center xl:mb-[5px] pointer-events-none xs:mb-0"
               >
@@ -125,7 +131,7 @@
                 Front-end Developer
               </h3>
               <div
-                class="socials w-[280px] flex items-center justify-center mx-auto gap-[25px] border-[2px] rounded-[10px] border-transparent xl:mb-[50px] relative xs:gap-[25px] xs:w-[100%] xs:mx-auto xs:mb-[10px] "
+                class="socials w-[280px] flex items-center justify-center mx-auto gap-[25px] border-[2px] rounded-[10px] border-transparent xl:mb-[50px] relative xs:gap-[25px] xs:w-[100%] xs:mx-auto xs:mb-[10px]"
               >
                 <a
                   href="https://www.facebook.com/fahadiqbal246?mibextid=JRoKGi"
@@ -223,7 +229,7 @@
 
           <!-------- all details -------->
           <div
-            class="all_details col-span-2 border-0 rounded-[10px] bg-[#0d0e1b] xl:px-[30px] xl:py-[30px] sm:mx-[20px] sm:mb-[40px] sm:px-[35px] sm:py-[35px]"
+            class="all_details col-span-2 border-0 xl:mt-0 rounded-[10px] bg-[#0d0e1b] xl:px-[30px] xl:py-[30px] sm:mx-[20px] sm:mb-[40px] sm:px-[35px] sm:py-[35px] xs:px-[25px] xs:py-[25px] xs:mt-[30px]"
           >
             <div
               class="home xl:px-[20px] xl:py-[20px] rounded-[10px] xl:mt-[200px] xl:h-[550px] sm:py-[100px]"
@@ -233,7 +239,7 @@
               >
                 <div class="left">
                   <h1
-                    class="text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none sm:mb-[50px] sm:tracking-[2px]"
+                    class="xl:text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none sm:mb-[50px] sm:tracking-[2px] xs:text-[25px]"
                   >
                     Front end developer <br />
                     who writes clean, <br />
@@ -243,12 +249,12 @@
                 </div>
                 <div class="right text-center">
                   <h1
-                    class="text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none"
+                    class="xl:text-[50px] font-[600] text-[#fff] opacity-[.6] pointer-events-none"
                   >
                     &lt; coder &gt;
                   </h1>
                   <p
-                    class="text-[16px] font-[500] text-[#fff] opacity-[.6] pointer-events-none"
+                    class="xl:ext-[16px] font-[500] text-[#fff] opacity-[.6] pointer-events-none"
                   >
                     responsive web designer
                   </p>
